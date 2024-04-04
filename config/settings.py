@@ -31,6 +31,26 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "kiosk.apps.KioskConfig", # 앱의 구성 클래스에 대한 참조
+    #
+    # manage.py makemigrations kiosk 
+    # makemigrations 을 실행시킴으로서, 
+    # 당신이 모델을 변경시킨 사실과(이 경우에는 새로운 모델을 만들었습니다) 
+    # 이 변경사항을 migration으로 저장시키고 싶다는 것을 Django에게 알려줍니다.
+    #
+    # python manage.py sqlmigrate kiosk 0001
+    # migration이 내부적으로 어떤 SQL 문장을 실행하는지
+    #
+    # python manage.py migrate 데이터베이스에 모델과 관련된 테이블을 생성
+    #
+    # 모델의 변경을 만드는 세 단계의 지침을 기억하세요.
+    # (models.py 에서) 모델을 변경합니다.
+    # python manage.py makemigrations을 통해 이 변경사항에 대한 마이그레이션을 만드세요.
+    # python manage.py migrate 명령을 통해 변경사항을 데이터베이스에 적용하세요.
+    #
+    # 마이그레이션을 만드는 명령과 적용하는 명령이 분리된 것은 
+    # 버전 관리 시스템에 마이그레이션을 커밋하고 앱과 함께 출시할 수 있도록 하기 위해서입니다.
+    #
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
