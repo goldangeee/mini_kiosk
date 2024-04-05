@@ -5,3 +5,6 @@ class Category(models.Model):
 
 class Subcategory(models.Model):
     subcategory = models.ForeignKey(Category, on_delete=models.CASCADE)
+
+class Order(models.Model):
+    pass
