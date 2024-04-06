@@ -4,7 +4,9 @@ class Category(models.Model):
     category = models.CharField(max_length=200)
 
 class Subcategory(models.Model):
-    subcategory = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    name = models.CharField(max_length=200, default='default_value')
+    price = models.IntegerField(default=0)
 
 class Order(models.Model):
     pass
