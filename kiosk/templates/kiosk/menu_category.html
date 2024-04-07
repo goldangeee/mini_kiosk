@@ -1,7 +1,7 @@
 {% if True %}
     <ul>
     {% for category in category_list %}
-        <li><a href="/kiosk/{{ category.id }}/">{{ category.category_name }}</a></li>
+        <li><a href="/kiosk/{{ category.category_name }}">{{ category.category_name }}</a></li>
     {% endfor %}
     </ul>
 {% endif %}
