@@ -1,12 +1,12 @@
 from django.db import models
 
 class Category(models.Model):
-    category = models.CharField(max_length=200)
+    category_name = models.CharField(max_length=200)
 
 class Subcategory(models.Model):
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category_name = models.ForeignKey(Category, on_delete=models.CASCADE)
     name = models.CharField(max_length=200, default='default_value')
     price = models.IntegerField(default=0)
 
-class Order(models.Model):
+class Orders(models.Model):
     pass
