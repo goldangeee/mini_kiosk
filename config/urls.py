@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path("kiosk/", include("kiosk.urls")), # include() 함수는 다른 URLconf들을 참조할 수 있도록 도와줍
+    path("kiosk/", include("kiosk.urls")), # include() 함수는 다른 URLconf들을 참조할 수 있도록 도와줌
     path("admin/", admin.site.urls),
     ]

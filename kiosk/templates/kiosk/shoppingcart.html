@@ -1,0 +1,8 @@
+{% if True %}
+    <ul>
+    {% for a in shoppinglist %}
+        <li>{{ a.name }} : {{a.quantity}}개 ?원 </li>
+    {% endfor %}
+    </ul>
+{% endif %}
+총 ?원

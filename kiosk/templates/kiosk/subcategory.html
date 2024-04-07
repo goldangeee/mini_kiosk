@@ -1,7 +1,8 @@
 {% if True %}
     <ul>
     {% for subcategory in subcategory_list %}
-        <li>{{ subcategory.name }}</li>
+        <li>{{ subcategory.name }} {{subcategory.price}}원 </li>
     {% endfor %}
     </ul>
 {% endif %}
+<a href="/kiosk">홈</a>
