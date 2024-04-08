@@ -1,7 +1,9 @@
 {% if True %}
     <ul>
     {% for subcategory in subcategory_list %}
-        <li>{{ subcategory.name }} {{subcategory.price}}원 </li>
+        <li>{{ subcategory.name }} {{subcategory.price}}원 </li> 
+        <!-- <button>장바구니에 담기</button> -->
+        <input type="submit" value="장바구니에 추가" class="btn btn-primary btn-sm">
     {% endfor %}
     </ul>
 {% endif %}
